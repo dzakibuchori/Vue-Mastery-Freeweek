@@ -1,20 +1,18 @@
-- Data can be bound to HTML attributes.
-- Syntax is v-bind: or : for short.
-- The attribute name that comes after the : specifies the attribute we’re binding data to.
-- Inside the attribute’s quotes, we reference the data we’re binding to.
----
-Binding
-- prefer using :
-```html
-<img :src="image" />
-<a :href="link" target="_blank">More products like this</a>
+- There are Vue directives to conditionally render elements:
+  - v-if
+  - v-else-if
+  - v-else
+  - v-show
+- If whatever is inside the directive’s quotes is truthy, the element will display.
+- You can use expressions inside the directive’s quotes.
+- V-show only toggles visibility, it does not insert or remove the element from the DOM.
 
-```
-- putting in data
-```vue
-data: {
-        product: 'Socks',
-        image: 'vmSocks-green-onWhite.jpg',
-        link: 'https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=socks'
-    }
-```
+---
+Conditional Rendering
+- directives : 
+  - v-if
+  - v-else-if
+  - v-else
+  - v-show (toggle show)
+
+data output : true/false (boolean)
