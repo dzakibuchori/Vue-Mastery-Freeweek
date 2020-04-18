@@ -4,6 +4,6 @@
 - The Vue instance’s data can be displayed using the mustache-like syntax {{ }} called an expression.
 - Vue is reactive
 ---
-- interpolatein {{ variable }}
+- interpolation {{ variable }}
 - hook => el: #app <- this is id
 - putting data => data: { tes: 'tes' } <- this is object
